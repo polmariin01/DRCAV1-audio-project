@@ -1,0 +1,198 @@
+==Introduction==
+
+===Goal===
+The evaluation of key finding algorithms applied to audio sound files
+
+===Dataset=== 
+1,252 audio files synthesized from MIDI Note: There is a close relationship (same musical datasets) between this contest and the Symbolic Key Finding contest. Here is a link to the Symbolic Key Finding results.
+
+Two databases used: Winamp synthesized audio (w) and Timidity with Fusion soundfonts synthesized audio (t). Each database is approximately 3.1 gigabytes for a total of 6.2 gigabytes of audio files.
+
+The composite score is calculated by averaging the Winamp and Timidity scores. 
+
+==Results==
+{| border="1" cellspacing="0"
+|- style="background: yellow;"
+!Rank
+!Participant
+!Composite Percentage Score
+!colspan="2" | Total Score
+!colspan="2" | Percentage Score
+!colspan="2" | Correct Keys
+!colspan="2" | Perfect 5th Errors
+!colspan="2" | Relative Major/Minor Errors
+!colspan="2" | Parallel Major/Minor Errors
+!colspan="2" | Other Errors
+!colspan="2" | Runtime (s)
+!Machine
+|----
+|
+|
+|
+|w
+|t
+|w
+|t
+|w
+|t
+|w
+|t
+|w
+|t
+|w
+|t
+|w
+|t
+|w
+|t
+|
+|----
+|1
+|[https://www.music-ir.org/mirex/abstracts/2005/izmirli.pdf Izmirli, Ö. ]
+|align="right " | 89.55%
+|align="right " | 1188.8
+|align="right " | 1122.9
+|align="right " | 89.4%
+|align="right " | 89.7%
+|align="right " | 1086
+|align="right " | 1089
+|align="right " | 36
+|align="right " | 42
+|align="right " | 38
+|align="right " | 31
+|align="right " | 17
+|align="right " | 18
+|align="right " | 75
+|align="right " | 72
+|align="right " | 15284
+|align="right " | 16354
+|align="right " | Y
+|----
+|2
+|[https://www.music-ir.org/mirex/abstracts/2005/purwins.pdf Purwins &amp; Blankertz ]
+|align="right " | 89.00%
+|align="right " | 1122.4
+|align="right " | 1106.5
+|align="right " | 89.6%
+|align="right " | 88.4%
+|align="right " | 1090
+|align="right " | 1060
+|align="right " | 44
+|align="right " | 72
+|align="right " | 24
+|align="right " | 21
+|align="right " | 16
+|align="right " | 21
+|align="right " | 78
+|align="right " | 78
+|align="right " | 45003
+|align="right " | 44232
+|align="right " | R
+|----
+|3
+|[https://www.music-ir.org/mirex/abstracts/2005/gomez.pdf Gómez, E. (start)]
+|align="right " | 86.05%
+|align="right " | 1081.9
+|align="right " | 1072.9
+|align="right " | 86.4%
+|align="right " | 85.7%
+|align="right " | 1048
+|align="right " | 1034
+|align="right " | 35
+|align="right " | 44
+|align="right " | 38
+|align="right " | 43
+|align="right " | 25
+|align="right " | 20
+|align="right " | 106
+|align="right " | 111
+|align="right " | 1560
+|align="right " | 1531
+|align="right " | B 0
+|----
+|4
+|[https://www.music-ir.org/mirex/abstracts/2005/gomez.pdf Gómez, E. (global)]
+|align="right " | 85.90%
+|align="right " | 1076.1
+|align="right " | 1073.8
+|align="right " | 86.0%
+|align="right " | 85.8%
+|align="right " | 1019
+|align="right " | 1015
+|align="right " | 69
+|align="right " | 73
+|align="right " | 62
+|align="right " | 59
+|align="right " | 20
+|align="right " | 23
+|align="right " | 82
+|align="right " | 82
+|align="right " | 2041
+|align="right " | 1971
+|align="right " | B 0
+|----
+|5
+|[https://www.music-ir.org/mirex/abstracts/2005/pauws.pdf Pauws, S. ]
+|align="right " | 85.00%
+|align="right " | 1055.1
+|align="right " | 1072.8
+|align="right " | 84.3%
+|align="right " | 85.7%
+|align="right " | 1019
+|align="right " | 1034
+|align="right " | 20
+|align="right " | 23
+|align="right " | 67
+|align="right " | 69
+|align="right " | 30
+|align="right " | 33
+|align="right " | 116
+|align="right " | 93
+|align="right " | 503
+|align="right " | 507
+|align="right " | G
+|----
+|6
+|[https://www.music-ir.org/mirex/abstracts/2005/zhu.pdf Zhu, Y.]
+|align="right " | 83.25%
+|align="right " | 1066.2
+|align="right " | 1017.7
+|align="right " | 85.2%
+|align="right " | 81.3%
+|align="right " | 1034
+|align="right " | 964
+|align="right " | 38
+|align="right " | 66
+|align="right " | 28
+|align="right " | 47
+|align="right " | 24
+|align="right " | 33
+|align="right " | 128
+|align="right " | 142
+|align="right " | 25233
+|align="right " | 24039
+|align="right " | Y
+|----
+|7
+|[https://www.music-ir.org/mirex/abstracts/2005/chuan.pdf Chuan &amp; Chew]
+|align="right " | 79.10%
+|align="right " | 1002.3
+|align="right " | 977.3
+|align="right " | 80.1%
+|align="right " | 78.1%
+|align="right " | 937
+|align="right " | 905
+|align="right " | 83
+|align="right " | 95
+|align="right " | 66
+|align="right " | 68
+|align="right " | 20
+|align="right " | 22
+|align="right " | 146
+|align="right " | 162
+|align="right " | 3299
+|align="right " | 3468
+|align="right " | R
+|----
+|}
+
