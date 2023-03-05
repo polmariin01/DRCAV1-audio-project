@@ -3,7 +3,7 @@
 PATH_MCGILL=db/McGill-Billboard/complete_annotations
 PATH_1=003/salami_chords.txt
 PATH_RESULTS=../results
-
+PATH_STEPS=db/giantsteps-key-dataset
 
 how_to() {
     echo "Empleo: $0 [db]"
@@ -60,7 +60,16 @@ extract_mcgill() {
 
 extract_mirex() {
     echo "La de la mirex"
-    echo ""
+    echo "No existe ara mateix"
+}
+
+extract_giantsteps() {
+    cd ../$PATH_STEPS
+    for file in ./md5/*.md5; do
+        echo "Converting : ${file} ..."
+        sox $file ${file%md5}wav rate 44100 gain -0.1 remix -;
+        echo " done!\n"
+    done;
 }
 
 
@@ -74,6 +83,11 @@ case $MODE in
 
   mirex | MIREX | Mirex)
     extract_mirex
+    exit 1
+    ;;
+
+  giant | giantsteps | GiantSteps | steps)
+    extract_giantsteps
     exit 1
     ;;
 

@@ -9,9 +9,13 @@
 #bash_version    :3.2.57(1)-release
 #==============================================================================
 
-
-for file in ./audio/*.mp3; do
+cd audio
+for file in ./*.mp3; do
     printf "Converting : ${file} ..."
-    sox $file ${file%mp3}wav rate 44100 gain -0.1 remix -;
+    #touch ../audiowav/${file%mp3}wav
+    lame -b 44100 -f $file ../audiowav/${file%mp3}wav 
+#    sox $file ${file%mp3}wav rate 44100 gain -0.1 remix -;
     printf " done!\n"
 done;
+
+# script modificat
