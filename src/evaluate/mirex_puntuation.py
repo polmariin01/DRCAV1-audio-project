@@ -5,6 +5,7 @@ n_keys = len(key_flat_wheel)
 all_keys = ["A","Bb","B","C","Db","D","Eb","E","F","Gb","G","Ab"]
 keys_N = len(all_keys) #12 notes
 FIFTH = 7
+FORTH = 5
 RELATIU = 3
 
 
@@ -59,21 +60,26 @@ def puntuation_mirex(key_truth : str, key_result : str):
     note1, rel1 = _get_note( _adjust(key_truth) )
     note2, rel2 = _get_note( _adjust(key_result) )
 
-    rels = rel1 == rel2
+    #print("keysN - " + str(keys_N))
+    rels = rel1 & rel2
     dist = (keys_N + note2 - note1) % keys_N
     print("Relatiu igual: " + str(rels) + "\tDistancia semitons: " + str(dist))
 
     if dist == 0:      # Same note
-        if rels:    # Same key
+        if rel1 == rel2:    # Same key
             #print("Same")
             return 1 , "Same"
         else :              # Parallel major/minor
             #print("Parallel")
             return 0.2 , "Parallel"
-        
+
     if dist == FIFTH: # Fifth
+#    if dist == FIFTH or dist == FORTH: # Fifth and forth
         #print("Fifth")
         return 0.5 , "Fifth"
+    
+##    if dist == FORTH: #forth
+#        return 0.5 , "Forth"
 
     if not rels:
         if rel2 and dist == RELATIU:
