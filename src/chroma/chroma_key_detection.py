@@ -33,6 +33,7 @@ a = os.listdir(path)
 print(a)
 
 contador=0
+contador = score_mirex()
 total_songs = len(a)
 
 for song in a:
